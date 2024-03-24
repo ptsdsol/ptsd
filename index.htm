@@ -1,0 +1,3245 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--metatextblock-->
+    <title>$PTSD</title>
+
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <link href="css/scribbler" rel="stylesheet">
+   
+    <link rel="shortcut icon" href="x.png" type="image/x-icon">
+    <!--/metatextblock-->
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="https://ws.tildacdn.com">
+    <link rel="dns-prefetch" href="https://static.tildacdn.com">
+    <link rel="shortcut icon" href="x.png" type="image/x-icon"><!-- Assets -->
+    <script src="js/tilda-fallback-1.0.min.js" async="" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';">
+    <link rel="stylesheet" href="css/tilda-blocks-page42065972.min.css" type="text/css" media="all" onerror="this.loaderr='y';">
+    <link rel="stylesheet" href="css/tilda-animation-2.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';">
+    <link rel="stylesheet" href="css/highlight.min.css" type="text/css" media="all" onerror="this.loaderr='y';">
+    <script nomodule="" src="https://www.ptsdsol.xyz/js/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        function t_onReady(func) {
+            if (document.readyState != 'loading') {
+                func();
+            } else {
+                document.addEventListener('DOMContentLoaded', func);
+            }
+        }
+
+        function t_onFuncLoad(funcName, okFunc, time) {
+            if (typeof window[funcName] === 'function') {
+                okFunc();
+            } else {
+                setTimeout(function () {
+                    t_onFuncLoad(funcName, okFunc, time);
+                }, (time || 100));
+            }
+        }
+
+        function t396_initialScale(t) {
+            var e = document.getElementById("rec" + t);
+            if (e) {
+                var r = e.querySelector(".t396__artboard");
+                if (r) {
+                    var a, i = document.documentElement.clientWidth,
+                        l = [],
+                        d = r.getAttribute("data-artboard-screens");
+                    if (d) {
+                        d = d.split(",");
+                        for (var o = 0; o < d.length; o++) l[o] = parseInt(d[o], 10)
+                    } else l = [320, 480, 640, 960, 1200];
+                    for (o = 0; o < l.length; o++) {
+                        var n = l[o];
+                        n <= i && (a = n)
+                    }
+                    var g = "edit" === window.allrecords.getAttribute("data-tilda-mode"),
+                        u = "center" === t396_getFieldValue(r, "valign", a, l),
+                        c = "grid" === t396_getFieldValue(r, "upscale", a, l),
+                        t = t396_getFieldValue(r, "height_vh", a, l),
+                        f = t396_getFieldValue(r, "height", a, l),
+                        e = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(
+                            " OPR/");
+                    if (!g && u && !c && !t && f && !e) {
+                        for (var s = parseFloat((i / a).toFixed(3)), _ = [r, r.querySelector(".t396__carrier"), r
+                                .querySelector(".t396__filter")
+                            ], o = 0; o < _.length; o++) _[o].style.height = parseInt(f, 10) * s + "px";
+                        for (var h = r.querySelectorAll(".t396__elem"), o = 0; o < h.length; o++) h[o].style.zoom = s
+                    }
+                }
+            }
+        }
+
+        function t396_getFieldValue(t, e, r, a) {
+            var i = a[a.length - 1],
+                l = r === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + r);
+            if (!l)
+                for (var d = 0; d < a.length; d++) {
+                    var o = a[d];
+                    if (!(o <= r) && (l = o === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute(
+                            "data-artboard-" + e + "-res-" + o))) break
+                }
+            return l
+        }
+    </script>
+    <script src="js/jquery-1.10.2.min.js" charset="utf-8" onerror="this.loaderr='y';"></script>
+    <script src="js/tilda-scripts-3.0.min.js" charset="utf-8" defer="" onerror="this.loaderr='y';"></script>
+    <script src="js/tilda-blocks-page42065972.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+    <script src="js/tilda-lazyload-1.0.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+    <script src="js/tilda-animation-2.0.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+    <script src="js/highlight.min.js" charset="utf-8" onerror="this.loaderr='y';"></script>
+    <script src="js/hammer.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+    <script src="js/tilda-zero-1.1.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+    <script src="js/tilda-zero-scale-1.0.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+    <script src="js/tilda-events-1.0.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+    </script>
+    <script type="text/javascript">
+        (function () {
+            if ((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i
+                    .test(navigator.userAgent)) === false && typeof (sessionStorage) != 'undefined' &&
+                sessionStorage.getItem('visited') !== 'y' && document.visibilityState) {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML =
+                    '@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+
+                function t_setvisRecs() {
+                    var alr = document.querySelectorAll('.t-records');
+                    Array.prototype.forEach.call(alr, function (el) {
+                        el.classList.add("t-records_animated");
+                    });
+                    setTimeout(function () {
+                        Array.prototype.forEach.call(alr, function (el) {
+                            el.classList.add("t-records_visible");
+                        });
+                        sessionStorage.setItem("visited", "y");
+                    }, 400);
+                }
+                document.addEventListener('DOMContentLoaded', t_setvisRecs);
+            }
+        })();
+    </script>
+    <style type="text/css">@media screen and (min-width: 980px) {
+            .t-records {
+                opacity: 0;
+            }
+
+            .t-records_animated {
+                -webkit-transition: opacity ease-in-out .2s;
+                -moz-transition: opacity ease-in-out .2s;
+                -o-transition: opacity ease-in-out .2s;
+                transition: opacity ease-in-out .2s;
+            }
+
+            .t-records.t-records_visible {
+                opacity: 1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="sunta.css">
+</head>
+
+<body class="t-body" style="margin:0;">
+    <!--allrecords-->
+    <div id="allrecords" class="t-records t-records_animated t-records_visible" data-hook="blocks-collection-content-node" data-tilda-project-id="8294590" data-tilda-page-id="42065972" data-tilda-formskey="eedeb8964872fc9c8fce03fb18294590" data-tilda-cookie="no" data-tilda-lazy="yes">
+        <div id="rec680530834" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+                        <style>/* Custom CSS for the menu/navigation bar */
+                            @font-face {
+                                font-family: 'Jotchua';
+                                src: url('fonts/Jotchua.ttf') format('truetype');
+                                /* Update the URL to the path of your font file */
+                            }
+
+                            #custom-navbar {
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                color: inherit;
+                                padding: 10px;
+                                z-index: 9999;
+                                text-align: center;
+                                font-family: 'Jotchua', sans-serif;
+                                /* Use the custom font */
+                            }
+
+                            #custom-navbar ul {
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                            #custom-navbar ul li {
+                                display: inline-block;
+                                margin-right: 20px;
+                                /* Increase spacing between menu options */
+                            }
+
+                            #custom-navbar ul li a {
+                                color: #fff;
+                                text-decoration: none;
+                                padding: 5px;
+                                font-size: 28px;
+                                /* Reduce font size by 20% */
+                                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                                /* Add a dark shadow effect */
+                                transition: all 0.3s ease;
+                                /* Add transition effect */
+                            }
+
+                            #custom-navbar ul li a:hover {
+                                text-decoration: underline;
+                                transform: scale(1.2);
+                                /* Add scaling effect */
+                            }
+                        </style>
+
+                        <div id="custom-navbar">
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+
+                           
+                                <li><a href="#meme-bank">MEMES</a></li>
+                                <!-- Updated href to scroll to #meme-bank section -->
+                                <li><a href="https://pump.fun" target="_blank">SELL NOW</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec688893727" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <style>@font-face {
+                                font-family: 'Jotchua';
+                                src: url('fonts/Jotchua.ttf') format('truetype');
+                                /* Update the URL to the path of your font file */
+                            }
+
+                            .title {
+                                text-align: center;
+                                font-size: 110px;
+                                font-family: 'Jotchua', sans-serif;
+                                color: #ff00ff;
+                                text-shadow: 3px 3px #00ff00;
+                                animation: rainbowText 2s linear infinite;
+                                margin-bottom: 0px;
+                                /* Spacing between title and other content */
+                                padding-top: 70px;
+                                /* 20 pixels of padding at the top */
+                            }
+
+                            @keyframes rainbowText {
+
+                                0%,
+                                100% {
+                                    color: #ff0000;
+                                    text-shadow: 3px 3px #00ff00;
+                                }
+
+                                20% {
+                                    color: #ff7f00;
+                                    text-shadow: 3px 3px #007fff;
+                                }
+
+                                40% {
+                                    color: #ffff00;
+                                    text-shadow: 3px 3px #ff00ff;
+                                }
+
+                                60% {
+                                    color: #00ff00;
+                                    text-shadow: 3px 3px #ff0000;
+                                }
+
+                                80% {
+                                    color: #0000ff;
+                                    text-shadow: 3px 3px #00ff00;
+                                }
+                            }
+                        </style>
+
+
+
+                        <div class="title">$PTSD</div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec680535216" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <style>@font-face {
+                                font-family: 'Jotchua';
+                                src: url('fonts/Jotchua.ttf') format('truetype');
+                                /* Update the URL to the path of your font file */
+                            }
+
+                            .centered-text {
+                                text-align: center;
+                                font-size: 36px;
+                                font-family: 'Jotchua', sans-serif;
+                                /* Fallback to sans-serif if Jotchua is not available */
+                                cursor: pointer;
+                                color: #ff00ff;
+                                /* Bright colors */
+                                background-color: #0000ff;
+                                /* Contrasting background */
+                                border: 3px dotted #00ff00;
+                                /* Dotted or dashed borders */
+                                padding: 5px;
+                                margin: 10px;
+                                text-shadow: 2px 2px #ff0000;
+                                /* Text shadow for a glowing effect */
+                                transition: all 0.5s;
+                                /* Smooth transition for hover effects */
+                                display: inline-block;
+                                /* This makes the hover area only as big as the text */
+                                position: relative;
+                                /* Position relative to enable centering */
+                                left: 50%;
+                                /* Moves element to the right */
+                                transform: translateX(-50%);
+                                /* Centers the element */
+                            }
+
+                            .centered-text:hover {
+                                color: #00ff00;
+                                /* Change text color on hover */
+                                background-color: #ff0000;
+                                /* And background */
+                                transform: translateX(-50%) scale(1.1);
+                                /* Slightly enlarge on hover */
+                                text-shadow: 3px 3px #0000ff;
+                            }
+                        </style>
+
+
+
+                        <div id="text" class="centered-text" onmouseover="mouseOver()" onmouseout="mouseOut()">ON
+                            SOLANA</div>
+
+                        <script>
+                            function mouseOver() {
+                                document.getElementById("text").innerHTML = "$PTSD";
+                            }
+
+                            function mouseOut() {
+                                document.getElementById("text").innerHTML = "ON SOLANA";
+                            }
+                        </script>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec679946257" class="r t-rec t-rec_pt_30 t-rec_pb_15" style="padding-top:30px;padding-bottom:15px; " data-record-type="106">
+            <!-- T004 -->
+            <div class="t004">
+                <div class="t-container ">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div field="text" class="t-text t-text_md t-animate" data-animate-style="zoomin">
+                            <div style="font-size: 34px; z-index: 999 !important;" data-customstyle="yes">
+                                <p style="text-align: center;"><a href="https://t.me/ptsdonsolana" target="_blank" style="color: rgb(81, 45, 255);"><img class="icono" src="tg.png" alt=""><a href="https://twitter.com/ptsdonsolana" target="_blank" style="color: rgb(81, 45, 255);">
+                                        <img class="icono" src="x.png" alt="">
+                                    </a></p>
+                                <p style="text-align: center;"><a href="https://raydium.io/swap" target="_blank" style="color: rgb(81, 45, 255);">
+                                        <img class="icono" src="buy.png" alt="">
+                                    </a>
+                                    <a href="#roadmap" style="color: rgb(92, 58, 255);">
+                                        <img class="icono" src="roadmap.png" alt="">
+                                    </a><a href="#kuma" style="color: rgb(81, 45, 255);"><img class="icono" src="hot_to_buy.png" alt=""></a></p>
+                            </div>
+                                 <div id="about" class="neon-image" style="min-width: 100%; word-break: break-all;">
+                                     <p class="ca " style="word-wrap: break-word !important;"> NOW LIVE ON PUMP.FUN </p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>#rec679946257 .t-text {
+                    opacity: 1;
+                }
+            </style>
+        </div>
+        <div id="rec680538758" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <style>body {
+                                background: black;
+                                /* Dark background to enhance neon effect */
+                                background-image: url('https://your_background_image_url_here');
+                                /* Optional: Add a retro starry/sparkly background image */
+                            }
+
+                            .image-container {
+                                text-align: center;
+                                margin-top: 30px;
+                                position: relative;
+                            }
+
+                            .neon-image {
+                                display: inline-block;
+                                border: 5px solid transparent;
+                                box-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.7);
+                                animation: neonRainbow 3s linear infinite, neonFlicker 1.5s infinite alternate;
+                                max-width: 45%;
+                                /* Downsizing the image by 25% */
+                                height: auto;
+                            }
+
+                            @keyframes neonRainbow {
+
+                                0%,
+                                100% {
+                                    border-color: red;
+                                    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red;
+                                }
+
+                                20% {
+                                    border-color: orange;
+                                    box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange;
+                                }
+
+                                40% {
+                                    border-color: yellow;
+                                    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+                                }
+
+                                60% {
+                                    border-color: green;
+                                    box-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green, 0 0 40px green;
+                                }
+
+                                80% {
+                                    border-color: blue;
+                                    box-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue;
+                                }
+                            }
+
+                            @keyframes neonFlicker {
+                                /* ... existing flicker animation ... */
+                            }
+                        </style>
+
+
+
+                        <div class="image-container">
+                            <img class="neon-image" src="header.png" alt="HappyCoin Image">
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec689059625" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <title>About $PTSD</title>
+                        <style>@font-face {
+                                font-family: 'Jotchua';
+                                src: url('fonts/Jotchua.ttf') format('truetype');
+                                /* Update the URL to the path of your font file */
+                            }
+
+                            #about {
+                                text-align: center;
+                                font-family: 'Jotchua', sans-serif;
+                                animation: rainbowText 8s infinite;
+                                padding: 20px;
+                                /* Added 20px of padding */
+                                font-size: 200%;
+                                /* Increased font size by 300% */
+                                margin: 0 auto;
+                                /* Center the text block */
+                                max-width: 600px;
+                                /* Limit the width of the text block */
+                            }
+
+                            #about h2 {
+                                color: #000;
+                                /* Set the color of the heading to black */
+                                font-size: inherit;
+                                /* Inherit the font size from the parent */
+                            }
+
+                            #about p {
+                                color: #000;
+                                /* Set the color of the paragraph to black */
+                                font-size: inherit;
+                                /* Inherit the font size from the parent */
+                            }
+
+                            @keyframes rainbowText {
+
+                                0%,
+                                100% {
+                                    color: #ff0000;
+                                    text-shadow: 3px 3px #00ff00;
+                                }
+
+                                20% {
+                                    color: #ff7f00;
+                                    text-shadow: 3px 3px #007fff;
+                                }
+
+                                40% {
+                                    color: #ffff00;
+                                    text-shadow: 3px 3px #ff00ff;
+                                }
+
+                                60% {
+                                    color: #00ff00;
+                                    text-shadow: 3px 3px #ff0000;
+                                }
+
+                                80% {
+                                    color: #0000ff;
+                                    text-shadow: 3px 3px #00ff00;
+                                }
+                            }
+                        </style>
+
+
+                        <div id="about"><br><br>
+                            <h2><span style="color: #000;">PTSD</span></h2>
+                            <p><br>
+                                Degens -  once frolicking in the fields of decentralized dreams, now suffer from a new affliction – Meme Coin PTSD.   
+                                <br><br>
+                               At the mere mention of a new coin, they break into cold sweats, haunted by flashbacks of Elon Musk tweets and rollercoaster price charts. Their battle cries of "HODL!" have turned into frantic pleas for mercy as they navigate the treacherous waters of the meme coin madness.
+                                <br><br>
+                            </p>
+                       
+                        <h2><span style="color: #000;">PTSD</span></h2>
+<img class="neon-image" style="min-width: 100% !important;" src="left.jpg" alt="">
+<p>PTSD: where every "to the moon" chant is accompanied by an involuntary shiver and a side of existential crisis.
+<br><br>
+    Where is dev?
+    <br><br>
+    Will dev buy back?
+    <br><br>
+    Is dev selling?
+    <br><br>
+    Just Hodl.<br>
+    Or is it nuking?<br>
+    Wen marketing!</p>
+    </div><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec680537032" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="3">
+        <!-- T107 -->
+        <div class="t107">
+            <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+              
+                <img style="width: 30% !important;" class="t-img t-width t107__width t-width_6 neon-image" src="4.jpg" imgfield="img" alt="">
+                    <img style="width: 30% !important;" class="t-img t-width t107__width t-width_6 neon-image" src="2.jpg" imgfield="img" alt=""> <img style="width: 30% !important;" class="t-img t-width t107__width t-width_6 neon-image" src="1.jpg" imgfield="img" alt="">
+            </div>
+        </div>
+    </div>
+        <div id="rec689067986" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <style>body {
+                                background: black;
+                                /* Dark background to enhance neon effect */
+                                background-image: url('https://your_background_image_url_here');
+                                /* Optional: Add a retro starry/sparkly background image */
+                            }
+
+                            .image-container {
+                                text-align: center;
+                                margin-top: 30px;
+                                position: relative;
+                            }
+
+                            .neon-image {
+                                display: inline-block;
+                                border: 5px solid transparent;
+                                box-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.7);
+                                animation: neonRainbow 3s linear infinite, neonFlicker 1.5s infinite alternate;
+                                max-width: 45%;
+                                /* Downsizing the image by 25% */
+                                height: auto;
+                            }
+
+                            @keyframes neonRainbow {
+
+                                0%,
+                                100% {
+                                    border-color: red;
+                                    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red;
+                                }
+
+                                20% {
+                                    border-color: orange;
+                                    box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange;
+                                }
+
+                                40% {
+                                    border-color: yellow;
+                                    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+                                }
+
+                                60% {
+                                    border-color: green;
+                                    box-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green, 0 0 40px green;
+                                }
+
+                                80% {
+                                    border-color: blue;
+                                    box-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue;
+                                }
+                            }
+
+                            @keyframes neonFlicker {
+                                /* ... existing flicker animation ... */
+                            }
+                        </style>
+
+
+
+                        <div class="image-container">
+                            <img class="neon-image" src="9.jpg" alt="HappyCoin Image">
+                            
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec682291795" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <title>O/O Tax!</title>
+                        <style>@font-face {
+                                font-family: 'Jotchua';
+                                src: url('fonts/Jotchua.ttf') format('truetype');
+                                /* Update the URL to the path of your font file */
+                            }
+
+                            #moreinfo {
+                                text-align: center;
+                                font-family: 'Jotchua', sans-serif;
+                                animation: neonText 2s infinite;
+                                padding: 20px;
+                                font-size: 200%;
+                                margin: 0 auto;
+                                max-width: 600px;
+                            }
+
+                            #moreinfo h2 {
+                                color: #000;
+                                font-size: inherit;
+                            }
+
+                            #moreinfo p {
+                                color: #000;
+                                font-size: inherit;
+                            }
+                        </style>
+
+
+                        <div id="moreinfo">
+                            <br>
+                            <h2>O/O Tax!</h2><br>
+                            <h2>Ticker: $PTSD!</h2><br>
+                            <h2>LP Burnt!</h2><br>
+               
+                         
+
+                        </div>
+
+
+<br><br><br><br>
+<h1 style="text-align: center; font-size: 50px;">HOW TO BUY</h1>
+
+                                <div id="kuma" class="mako">
+                                    <img class="dege" src="i1.png" alt="">
+                                    <img class="dege" src="i.png" alt="">
+
+                                    <img class="dege" src="i3.png" alt="">
+                                </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec689074432" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <style>body {
+                                background: black;
+                                /* Dark background to enhance neon effect */
+                                background-image: url('https://your_background_image_url_here');
+                                /* Optional: Add a retro starry/sparkly background image */
+                            }
+
+                            .image-container {
+                                text-align: center;
+                                margin-top: 30px;
+                                position: relative;
+                            }
+
+                            .neon-image {
+                                display: inline-block;
+                                border: 5px solid transparent;
+                                box-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.7);
+                                animation: neonRainbow 3s linear infinite, neonFlicker 1.5s infinite alternate;
+                                max-width: 45%;
+                                /* Downsizing the image by 25% */
+                                height: auto;
+                            }
+
+                            @keyframes neonRainbow {
+
+                                0%,
+                                100% {
+                                    border-color: red;
+                                    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red;
+                                }
+
+                                20% {
+                                    border-color: orange;
+                                    box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange;
+                                }
+
+                                40% {
+                                    border-color: yellow;
+                                    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+                                }
+
+                                60% {
+                                    border-color: green;
+                                    box-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green, 0 0 40px green;
+                                }
+
+                                80% {
+                                    border-color: blue;
+                                    box-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue;
+                                }
+                            }
+
+                            @keyframes neonFlicker {
+                                /* ... existing flicker animation ... */
+                            }
+                        </style>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec689067130" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <title>O/O Tax!</title>
+                        <style>@font-face {
+                                font-family: 'Jotchua';
+                                src: url('fonts/Jotchua.ttf') format('truetype');
+                                /* Update the URL to the path of your font file */
+                            }
+
+                            #NFT {
+                                text-align: center;
+                                font-family: 'Jotchua', sans-serif;
+                                animation: neonText 2s infinite;
+                                padding: 20px;
+                     
+                                margin: 0 auto;
+                                max-width: 600px;
+                            }
+
+                            #NFT h2 {
+                                color: #ffffff;
+                                font-size: inherit;
+                            }
+
+                            #NFT p {
+                                color: #ffffff;
+                                font-size: inherit;
+                            }
+                        </style>
+
+
+                        <div id="NFT">
+                            <p id="roadmap" style="font-size: 50px; color: black;"><br> <br>  ROADMAP
+                            </p>
+                  
+
+
+
+
+
+
+
+
+
+
+                            <div class="road">
+                                <div class="boxrod">
+                                    <h1>PHASE 1</h1>
+                                    <p>
+                                        -Web creation <br>
+                                        -Contract Creation <br>
+                                        -Telegram Marketing
+        
+                                    </p>
+                                </div>
+                                <div class="boxrod">
+                                    <h1>PHASE 2</h1>
+                                    <p>
+                                        -Stress <br>
+                                        -Fud <br>
+                                        -Did dev sell?<br>
+                                        -PTSD
+                                    </p>
+                                </div>
+                                <div class="boxrod">
+                                    <h1>PHASE 3</h1>
+                                    <p>
+                                        -Where is dev? <br>
+                                        -Wen more Marketing?<br>
+                                        -Is it dumping? <br>
+                                        -Wen voice chat?
+                                    </p>
+                                </div>
+                                <div class="boxrod">
+                                    <h1>PHASE 4</h1>
+                                    <p>
+                                        -post traumatic stress disorder <br>
+                                        -post traumatic stress disorder <br>
+                                        -MOON<br>
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <br>
+                            <br>
+
+                            Join for PTSD!<br><br>
+                        
+                            <p></p><br>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="rec680530681" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <meta charset="UTF-8">
+                        <title>Click Anywhere to Play Audio</title>
+                        <style>.audio-container {
+                                text-align: center;
+                                margin: 0 auto;
+                                padding: 20px;
+                            }
+                        </style>
+
+
+
+                        <div id="meme-bank" class="audio-container">
+
+                     
+                        </div>
+
+     
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 id="mboroz" style="text-align: center;font-size: 50px; text-decoration: double;"> TRAUMA! </h1>
+        <div id="rec682290746" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="396">
+            <!-- T396 -->
+            <style>#rec682290746 .t396__artboard {
+                    height: 690px;
+                }
+
+                #rec682290746 .t396__filter {
+                    height: 690px;
+                }
+
+                #rec682290746 .t396__carrier {
+                    height: 690px;
+                    background-position: center center;
+                    background-attachment: scroll;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682290746 .t396__artboard {}
+
+                    #rec682290746 .t396__filter {}
+
+                    #rec682290746 .t396__carrier {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682290746 .t396__artboard {
+                        height: 520px;
+                    }
+
+                    #rec682290746 .t396__filter {
+                        height: 520px;
+                    }
+
+                    #rec682290746 .t396__carrier {
+                        height: 520px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682290746 .t396__artboard {
+                        height: 420px;
+                    }
+
+                    #rec682290746 .t396__filter {
+                        height: 420px;
+                    }
+
+                    #rec682290746 .t396__carrier {
+                        height: 420px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682290746 .t396__artboard {
+                        height: 330px;
+                    }
+
+                    #rec682290746 .t396__filter {
+                        height: 330px;
+                    }
+
+                    #rec682290746 .t396__carrier {
+                        height: 330px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                #rec682290746 .tn-elem[data-elem-id="1470210033144"] {
+                    z-index: 2;
+                    top: calc(345px - 0px + -46px);
+                    left: calc(50% - 178px + -346px);
+                    width: 356px;
+                }
+
+                #rec682290746 .tn-elem[data-elem-id="1470210033144"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682290746 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + 66px);
+                        left: calc(50% - 178px + -287px);
+                        width: 287px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682290746 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -59px);
+                        left: calc(50% - 178px + -162px);
+                        width: 30%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {}
+
+                @media screen and (max-width: 479px) {
+                    #rec682290746 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -74px);
+                        left: calc(50% - 178px + -73px);
+                    }
+                }
+
+                #rec682290746 .tn-elem[data-elem-id="1702788956884"] {
+                    z-index: 3;
+                    top: calc(345px - 0px + -193px);
+                    left: calc(50% - 116px + 9px);
+                    width: 232px;
+                }
+
+                #rec682290746 .tn-elem[data-elem-id="1702788956884"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702788956884"] {
+                        top: calc(345px - 0px + 167px);
+                        left: calc(50% - 116px + 178px);
+                        width: 261px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702788956884"] {
+                        top: calc(345px - 0px + 82px);
+                        left: calc(50% - 116px + 185px);
+                        width: 30%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702788956884"] {
+                        top: calc(345px - 0px + 70px);
+                        left: calc(50% - 116px + 125px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702788956884"] {
+                        top: calc(345px - 0px + 83px);
+                        left: calc(50% - 116px + 83px);
+                    }
+                }
+
+                #rec682290746 .tn-elem[data-elem-id="1702788974907"] {
+                    z-index: 4;
+                    top: calc(345px - 0px + 123px);
+                    left: calc(50% - 200px + 152px);
+                    width: 400px;
+                }
+
+                #rec682290746 .tn-elem[data-elem-id="1702788974907"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702788974907"] {
+                        top: calc(345px - 0px + -185px);
+                        left: calc(50% - 200px + 22px);
+                        width: 254px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702788974907"] {
+                        top: calc(345px - 0px + -156px);
+                        left: calc(50% - 200px + 151px);
+                        width: 30%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702788974907"] {
+                        top: calc(345px - 0px + -81px);
+                        left: calc(50% - 200px + 107px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702788974907"] {
+                        top: calc(345px - 0px + -78px);
+                        left: calc(50% - 200px + 55px);
+                    }
+                }
+
+                #rec682290746 .tn-elem[data-elem-id="1702789038868"] {
+                    z-index: 5;
+                    top: calc(345px - 0px + -182px);
+                    left: calc(50% - 116px + 282px);
+                    width: 232px;
+                }
+
+                #rec682290746 .tn-elem[data-elem-id="1702789038868"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702789038868"] {
+                        top: calc(345px - 0px + -75px);
+                        left: calc(50% - 116px + 330px);
+                        width: 261px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702789038868"] {
+                        top: calc(345px - 0px + 158px);
+                        left: calc(50% - 116px + -58px);
+                        width: 30%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702789038868"] {
+                        top: calc(345px - 0px + 127px);
+                        left: calc(50% - 116px + -84px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682290746 .tn-elem[data-elem-id="1702789038868"] {
+                        top: calc(345px - 0px + 90px);
+                        left: calc(50% - 116px + -85px);
+                    }
+                }
+            </style>
+            <div class="t396">
+                <div class="t396__artboard" data-artboard-recid="682290746" data-artboard-screens="320,480,640,960,1200" data-artboard-height="690" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="330" data-artboard-height-res-480="420" data-artboard-height-res-640="520">
+                    <div class="t396__carrier" data-artboard-recid="682290746"></div>
+                    <div class="t396__filter" data-artboard-recid="682290746"></div>
+                    <div class="t396__elem tn-elem tn-elem__6822907461470210033144" data-elem-id="1470210033144" data-elem-type="image" data-field-top-value="-46" data-field-left-value="-346" data-field-width-value="356" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="375" data-field-fileheight-value="515" data-field-top-res-320-value="-74" data-field-left-res-320-value="-73" data-field-top-res-640-value="-59" data-field-left-res-640-value="-162" data-field-width-res-640-value="30" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="66" data-field-left-res-960-value="-287" data-field-width-res-960-value="287">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./1.png" alt="" imgfield="tn_img_1470210033144"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6822907461702788956884" data-elem-id="1702788956884" data-elem-type="image" data-field-top-value="-193" data-field-left-value="9" data-field-width-value="232" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="500" data-field-fileheight-value="471" data-field-top-res-320-value="83" data-field-left-res-320-value="83" data-field-top-res-480-value="70" data-field-left-res-480-value="125" data-field-top-res-640-value="82" data-field-left-res-640-value="185" data-field-width-res-640-value="30" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="167" data-field-left-res-960-value="178" data-field-width-res-960-value="261">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./9.jpg" alt="" imgfield="tn_img_1702788956884"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6822907461702788974907" data-elem-id="1702788974907" data-elem-type="image" data-field-top-value="123" data-field-left-value="152" data-field-width-value="400" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="680" data-field-fileheight-value="532" data-field-top-res-320-value="-78" data-field-left-res-320-value="55" data-field-top-res-480-value="-81" data-field-left-res-480-value="107" data-field-top-res-640-value="-156" data-field-left-res-640-value="151" data-field-width-res-640-value="30" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-185" data-field-left-res-960-value="22" data-field-width-res-960-value="254">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./7.gif" alt="" imgfield="tn_img_1702788974907"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6822907461702789038868" data-elem-id="1702789038868" data-elem-type="image" data-field-top-value="-182" data-field-left-value="282" data-field-width-value="232" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="360" data-field-fileheight-value="257" data-field-top-res-320-value="90" data-field-left-res-320-value="-85" data-field-top-res-480-value="127" data-field-left-res-480-value="-84" data-field-top-res-640-value="158" data-field-left-res-640-value="-58" data-field-width-res-640-value="30" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-75" data-field-left-res-960-value="330" data-field-width-res-960-value="261">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./10.gif" alt="" imgfield="tn_img_1702789038868"></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                t_onReady(function () {
+                    t_onFuncLoad('t396_init', function () {
+                        t396_init('682290746');
+                    });
+                });
+            </script><!-- /T396 -->
+        </div>
+        <div id="rec689070582" class="r t-rec" style=" " data-record-type="396">
+            <!-- T396 -->
+            <style>#rec689070582 .t396__artboard {
+                    height: 690px;
+                }
+
+                #rec689070582 .t396__filter {
+                    height: 690px;
+                }
+
+                #rec689070582 .t396__carrier {
+                    height: 690px;
+                    background-position: center center;
+                    background-attachment: scroll;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070582 .t396__artboard {}
+
+                    #rec689070582 .t396__filter {}
+
+                    #rec689070582 .t396__carrier {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070582 .t396__artboard {
+                        height: 520px;
+                    }
+
+                    #rec689070582 .t396__filter {
+                        height: 520px;
+                    }
+
+                    #rec689070582 .t396__carrier {
+                        height: 520px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070582 .t396__artboard {
+                        height: 420px;
+                    }
+
+                    #rec689070582 .t396__filter {
+                        height: 420px;
+                    }
+
+                    #rec689070582 .t396__carrier {
+                        height: 420px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070582 .t396__artboard {
+                        height: 330px;
+                    }
+
+                    #rec689070582 .t396__filter {
+                        height: 330px;
+                    }
+
+                    #rec689070582 .t396__carrier {
+                        height: 330px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                #rec689070582 .tn-elem[data-elem-id="1470210033144"] {
+                    z-index: 2;
+                    top: calc(345px - 0px + -89px);
+                    left: calc(50% - 125.5px + -448px);
+                    width: 251px;
+                }
+
+                #rec689070582 .tn-elem[data-elem-id="1470210033144"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070582 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + 143px);
+                        left: calc(50% - 125.5px + -66px);
+                        width: 184px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070582 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -115px);
+                        left: calc(50% - 125.5px + -3px);
+                        width: 14%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070582 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -94px);
+                        left: calc(50% - 125.5px + 17px);
+                        width: 22px;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070582 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + 3px);
+                        left: calc(50% - 125.5px + -7px);
+                    }
+                }
+
+                #rec689070582 .tn-elem[data-elem-id="1702441154995"] {
+                    z-index: 3;
+                    top: calc(345px - 0px + -4px);
+                    left: calc(50% - 125.5px + -55px);
+                    width: 251px;
+                }
+
+                #rec689070582 .tn-elem[data-elem-id="1702441154995"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + 184px);
+                        left: calc(50% - 125.5px + 194px);
+                        width: 124px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + -120px);
+                        left: calc(50% - 125.5px + 235px);
+                        width: 21%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + -97px);
+                        left: calc(50% - 125.5px + 145px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + -99px);
+                        left: calc(50% - 125.5px + 84px);
+                        width: 29px;
+                    }
+                }
+
+                #rec689070582 .tn-elem[data-elem-id="1702441324940"] {
+                    z-index: 4;
+                    top: calc(345px - 0px + -178px);
+                    left: calc(50% - 125.5px + 304px);
+                    width: 251px;
+                }
+
+                #rec689070582 .tn-elem[data-elem-id="1702441324940"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + -186px);
+                        left: calc(50% - 125.5px + -82px);
+                        width: 104px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + 162px);
+                        left: calc(50% - 125.5px + 214px);
+                        width: 20%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + 108px);
+                        left: calc(50% - 125.5px + 158px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + 54px);
+                        left: calc(50% - 125.5px + 101px);
+                    }
+                }
+
+                #rec689070582 .tn-elem[data-elem-id="1702441368517"] {
+                    z-index: 5;
+                    top: calc(345px - 0px + 147px);
+                    left: calc(50% - 125.5px + 425px);
+                    width: 251px;
+                }
+
+                #rec689070582 .tn-elem[data-elem-id="1702441368517"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441368517"] {
+                        top: calc(345px - 0px + -160px);
+                        left: calc(50% - 125.5px + 324px);
+                        width: 312px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441368517"] {
+                        top: calc(345px - 0px + 76px);
+                        left: calc(50% - 125.5px + 31px);
+                        width: 31%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441368517"] {
+                        top: calc(345px - 0px + 93px);
+                        left: calc(50% - 125.5px + 5px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {}
+
+                #rec689070582 .tn-elem[data-elem-id="1702441380548"] {
+                    z-index: 6;
+                    top: calc(345px - 0px + 154px);
+                    left: calc(50% - 78.5px + -269px);
+                    width: 157px;
+                }
+
+                #rec689070582 .tn-elem[data-elem-id="1702441380548"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -36px);
+                        left: calc(50% - 78.5px + -316px);
+                        width: 264px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -28px);
+                        left: calc(50% - 78.5px + -202px);
+                        width: 31%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -8px);
+                        left: calc(50% - 78.5px + -155px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070582 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -4px);
+                        left: calc(50% - 78.5px + -104px);
+                    }
+                }
+            </style>
+            <div class="t396">
+                <div class="t396__artboard" data-artboard-recid="689070582" data-artboard-screens="320,480,640,960,1200" data-artboard-height="690" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="330" data-artboard-height-res-480="420" data-artboard-height-res-640="520">
+                    <div class="t396__carrier" data-artboard-recid="689070582"></div>
+                    <div class="t396__filter" data-artboard-recid="689070582"></div>
+                    <div class="t396__elem tn-elem tn-elem__6890705821470210033144" data-elem-id="1470210033144" data-elem-type="image" data-field-top-value="-89" data-field-left-value="-448" data-field-width-value="251" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="133" data-field-fileheight-value="250" data-field-top-res-320-value="3" data-field-left-res-320-value="-7" data-field-top-res-480-value="-94" data-field-left-res-480-value="17" data-field-width-res-480-value="22" data-field-top-res-640-value="-115" data-field-left-res-640-value="-3" data-field-width-res-640-value="14" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="143" data-field-left-res-960-value="-66" data-field-width-res-960-value="184">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./11.gif" alt="" imgfield="tn_img_1470210033144"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6890705821702441154995" data-elem-id="1702441154995" data-elem-type="image" data-field-top-value="-4" data-field-left-value="-55" data-field-width-value="251" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="162" data-field-fileheight-value="320" data-field-top-res-320-value="-99" data-field-left-res-320-value="84" data-field-width-res-320-value="29" data-field-top-res-480-value="-97" data-field-left-res-480-value="145" data-field-top-res-640-value="-120" data-field-left-res-640-value="235" data-field-width-res-640-value="21" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="184" data-field-left-res-960-value="194" data-field-width-res-960-value="124">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./13.gif" alt="" imgfield="tn_img_1702441154995"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6890705821702441324940" data-elem-id="1702441324940" data-elem-type="image" data-field-top-value="-178" data-field-left-value="304" data-field-width-value="251" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="256" data-field-fileheight-value="256" data-field-top-res-320-value="54" data-field-left-res-320-value="101" data-field-top-res-480-value="108" data-field-left-res-480-value="158" data-field-top-res-640-value="162" data-field-left-res-640-value="214" data-field-width-res-640-value="20" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-186" data-field-left-res-960-value="-82" data-field-width-res-960-value="104">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./12.gif" alt="" imgfield="tn_img_1702441324940"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6890705821702441368517" data-elem-id="1702441368517" data-elem-type="image" data-field-top-value="147" data-field-left-value="425" data-field-width-value="251" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="256" data-field-fileheight-value="256" data-field-top-res-480-value="93" data-field-left-res-480-value="5" data-field-top-res-640-value="76" data-field-left-res-640-value="31" data-field-width-res-640-value="31" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-160" data-field-left-res-960-value="324" data-field-width-res-960-value="312">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./11.jpg" alt="" imgfield="tn_img_1702441368517"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6890705821702441380548" data-elem-id="1702441380548" data-elem-type="image" data-field-top-value="154" data-field-left-value="-269" data-field-width-value="157" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="133" data-field-fileheight-value="250" data-field-top-res-320-value="-4" data-field-left-res-320-value="-104" data-field-top-res-480-value="-8" data-field-left-res-480-value="-155" data-field-top-res-640-value="-28" data-field-left-res-640-value="-202" data-field-width-res-640-value="31" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-36" data-field-left-res-960-value="-316" data-field-width-res-960-value="264">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./6.gif" alt="" imgfield="tn_img_1702441380548"></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                t_onReady(function () {
+                    t_onFuncLoad('t396_init', function () {
+                        t396_init('689070582');
+                    });
+                });
+            </script><!-- /T396 -->
+        </div>
+        <div id="rec682291462" class="r t-rec" style=" " data-record-type="396">
+            <!-- T396 -->
+            <style>#rec682291462 .t396__artboard {
+                    height: 690px;
+                }
+
+                #rec682291462 .t396__filter {
+                    height: 690px;
+                }
+
+                #rec682291462 .t396__carrier {
+                    height: 690px;
+                    background-position: center center;
+                    background-attachment: scroll;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682291462 .t396__artboard {}
+
+                    #rec682291462 .t396__filter {}
+
+                    #rec682291462 .t396__carrier {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682291462 .t396__artboard {
+                        height: 520px;
+                    }
+
+                    #rec682291462 .t396__filter {
+                        height: 520px;
+                    }
+
+                    #rec682291462 .t396__carrier {
+                        height: 520px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682291462 .t396__artboard {
+                        height: 420px;
+                    }
+
+                    #rec682291462 .t396__filter {
+                        height: 420px;
+                    }
+
+                    #rec682291462 .t396__carrier {
+                        height: 420px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682291462 .t396__artboard {
+                        height: 330px;
+                    }
+
+                    #rec682291462 .t396__filter {
+                        height: 330px;
+                    }
+
+                    #rec682291462 .t396__carrier {
+                        height: 330px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1470210033144"] {
+                    z-index: 2;
+                    top: calc(345px - 0px + -7px);
+                    left: calc(50% - 155px + -316px);
+                    width: 310px;
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1470210033144"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682291462 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -2px);
+                        left: calc(50% - 155px + -241px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682291462 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -22px);
+                        left: calc(50% - 155px + -159px);
+                        width: 33%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682291462 .tn-elem[data-elem-id="1470210033144"] {
+                        left: calc(50% - 155px + -130px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682291462 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + 15px);
+                        left: calc(50% - 155px + -88px);
+                    }
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1702789486053"] {
+                    z-index: 3;
+                    top: calc(345px - 0px + -140px);
+                    left: calc(50% - 153.5px + 386px);
+                    width: 307px;
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1702789486053"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789486053"] {
+                        top: calc(345px - 0px + 136px);
+                        left: calc(50% - 153.5px + 8px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789486053"] {
+                        top: calc(345px - 0px + 22px);
+                        left: calc(50% - 153.5px + 218px);
+                        width: 20%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789486053"] {
+                        top: calc(345px - 0px + 21px);
+                        left: calc(50% - 153.5px + 161px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789486053"] {
+                        top: calc(345px - 0px + -15px);
+                        left: calc(50% - 153.5px + 106px);
+                    }
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1702789502025"] {
+                    z-index: 4;
+                    top: calc(345px - 0px + -145px);
+                    left: calc(50% - 154.5px + 46px);
+                    width: 309px;
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1702789502025"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789502025"] {
+                        top: calc(345px - 0px + 58px);
+                        left: calc(50% - 154.5px + 273px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789502025"] {
+                        top: calc(345px - 0px + 186px);
+                        left: calc(50% - 154.5px + 70px);
+                        width: 23%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789502025"] {
+                        top: calc(345px - 0px + 149px);
+                        left: calc(50% - 154.5px + 51px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789502025"] {
+                        top: calc(345px - 0px + 92px);
+                        left: calc(50% - 154.5px + 62px);
+                    }
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1702789512435"] {
+                    z-index: 5;
+                    top: calc(345px - 0px + 165px);
+                    left: calc(50% - 113px + 6px);
+                    width: 226px;
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1702789512435"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789512435"] {
+                        top: calc(345px - 0px + -200px);
+                        left: calc(50% - 113px + 240px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789512435"] {
+                        top: calc(345px - 0px + 48px);
+                        left: calc(50% - 113px + 42px);
+                        width: 22%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789512435"] {
+                        top: calc(345px - 0px + 23px);
+                        left: calc(50% - 113px + 29px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789512435"] {
+                        top: calc(345px - 0px + -17px);
+                        left: calc(50% - 113px + 11px);
+                    }
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1702789530501"] {
+                    z-index: 6;
+                    top: calc(345px - 0px + 169px);
+                    left: calc(50% - 182.5px + 361px);
+                    width: 365px;
+                }
+
+                #rec682291462 .tn-elem[data-elem-id="1702789530501"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789530501"] {
+                        top: calc(345px - 0px + -107px);
+                        left: calc(50% - 182.5px + 1px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789530501"] {
+                        top: calc(345px - 0px + -144px);
+                        left: calc(50% - 182.5px + 106px);
+                        width: 33%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789530501"] {
+                        top: calc(345px - 0px + -114px);
+                        left: calc(50% - 182.5px + 101px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec682291462 .tn-elem[data-elem-id="1702789530501"] {
+                        top: calc(345px - 0px + -111px);
+                        left: calc(50% - 182.5px + 78px);
+                    }
+                }
+            </style>
+            <div class="t396">
+                <div class="t396__artboard" data-artboard-recid="682291462" data-artboard-screens="320,480,640,960,1200" data-artboard-height="690" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="330" data-artboard-height-res-480="420" data-artboard-height-res-640="520">
+                    <div class="t396__carrier" data-artboard-recid="682291462"></div>
+                    <div class="t396__filter" data-artboard-recid="682291462"></div>
+                    <div class="t396__elem tn-elem tn-elem__6822914621470210033144" data-elem-id="1470210033144" data-elem-type="image" data-field-top-value="-7" data-field-left-value="-316" data-field-width-value="310" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="908" data-field-fileheight-value="1652" data-field-top-res-320-value="15" data-field-left-res-320-value="-88" data-field-left-res-480-value="-130" data-field-top-res-640-value="-22" data-field-left-res-640-value="-159" data-field-width-res-640-value="33" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-2" data-field-left-res-960-value="-241" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./14.png" alt="" imgfield="tn_img_1470210033144"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6822914621702789486053" data-elem-id="1702789486053" data-elem-type="image" data-field-top-value="-140" data-field-left-value="386" data-field-width-value="307" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1079" data-field-fileheight-value="1029" data-field-top-res-320-value="-15" data-field-left-res-320-value="106" data-field-top-res-480-value="21" data-field-left-res-480-value="161" data-field-top-res-640-value="22" data-field-left-res-640-value="218" data-field-width-res-640-value="20" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="136" data-field-left-res-960-value="8" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./12.jpg" alt="" imgfield="tn_img_1702789486053"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6822914621702789502025" data-elem-id="1702789502025" data-elem-type="image" data-field-top-value="-145" data-field-left-value="46" data-field-width-value="309" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="541" data-field-fileheight-value="395" data-field-top-res-320-value="92" data-field-left-res-320-value="62" data-field-top-res-480-value="149" data-field-left-res-480-value="51" data-field-top-res-640-value="186" data-field-left-res-640-value="70" data-field-width-res-640-value="23" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="58" data-field-left-res-960-value="273" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./11.jpg" alt="" imgfield="tn_img_1702789502025"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6822914621702789512435" data-elem-id="1702789512435" data-elem-type="image" data-field-top-value="165" data-field-left-value="6" data-field-width-value="226" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="388" data-field-fileheight-value="317" data-field-top-res-320-value="-17" data-field-left-res-320-value="11" data-field-top-res-480-value="23" data-field-left-res-480-value="29" data-field-top-res-640-value="48" data-field-left-res-640-value="42" data-field-width-res-640-value="22" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-200" data-field-left-res-960-value="240" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./8.gif" alt="" imgfield="tn_img_1702789512435"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6822914621702789530501" data-elem-id="1702789530501" data-elem-type="image" data-field-top-value="169" data-field-left-value="361" data-field-width-value="365" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="680" data-field-fileheight-value="453" data-field-top-res-320-value="-111" data-field-left-res-320-value="78" data-field-top-res-480-value="-114" data-field-left-res-480-value="101" data-field-top-res-640-value="-144" data-field-left-res-640-value="106" data-field-width-res-640-value="33" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-107" data-field-left-res-960-value="1" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./11.jpg" alt="" imgfield="tn_img_1702789530501"></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                t_onReady(function () {
+                    t_onFuncLoad('t396_init', function () {
+                        t396_init('682291462');
+                    });
+                });
+            </script><!-- /T396 -->
+        </div>
+        <div id="rec689070128" class="r t-rec" style=" " data-record-type="396">
+            <!-- T396 -->
+            <style>#rec689070128 .t396__artboard {
+                    height: 690px;
+                }
+
+                #rec689070128 .t396__filter {
+                    height: 690px;
+                }
+
+                #rec689070128 .t396__carrier {
+                    height: 690px;
+                    background-position: center center;
+                    background-attachment: scroll;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070128 .t396__artboard {}
+
+                    #rec689070128 .t396__filter {}
+
+                    #rec689070128 .t396__carrier {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070128 .t396__artboard {
+                        height: 520px;
+                    }
+
+                    #rec689070128 .t396__filter {
+                        height: 520px;
+                    }
+
+                    #rec689070128 .t396__carrier {
+                        height: 520px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070128 .t396__artboard {
+                        height: 420px;
+                    }
+
+                    #rec689070128 .t396__filter {
+                        height: 420px;
+                    }
+
+                    #rec689070128 .t396__carrier {
+                        height: 420px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070128 .t396__artboard {
+                        height: 330px;
+                    }
+
+                    #rec689070128 .t396__filter {
+                        height: 330px;
+                    }
+
+                    #rec689070128 .t396__carrier {
+                        height: 330px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1470210033144"] {
+                    z-index: 2;
+                    top: calc(345px - 0px + -7px);
+                    left: calc(50% - 155px + -316px);
+                    width: 310px;
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1470210033144"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070128 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -2px);
+                        left: calc(50% - 155px + -241px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070128 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -22px);
+                        left: calc(50% - 155px + -159px);
+                        width: 33%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070128 .tn-elem[data-elem-id="1470210033144"] {
+                        left: calc(50% - 155px + -130px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070128 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + 15px);
+                        left: calc(50% - 155px + -88px);
+                    }
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1702789486053"] {
+                    z-index: 3;
+                    top: calc(345px - 0px + -140px);
+                    left: calc(50% - 153.5px + 386px);
+                    width: 307px;
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1702789486053"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789486053"] {
+                        top: calc(345px - 0px + 136px);
+                        left: calc(50% - 153.5px + 8px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789486053"] {
+                        top: calc(345px - 0px + 22px);
+                        left: calc(50% - 153.5px + 218px);
+                        width: 20%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789486053"] {
+                        top: calc(345px - 0px + 21px);
+                        left: calc(50% - 153.5px + 161px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789486053"] {
+                        top: calc(345px - 0px + -15px);
+                        left: calc(50% - 153.5px + 106px);
+                    }
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1702789502025"] {
+                    z-index: 4;
+                    top: calc(345px - 0px + -145px);
+                    left: calc(50% - 154.5px + 46px);
+                    width: 309px;
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1702789502025"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789502025"] {
+                        top: calc(345px - 0px + 58px);
+                        left: calc(50% - 154.5px + 273px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789502025"] {
+                        top: calc(345px - 0px + 186px);
+                        left: calc(50% - 154.5px + 70px);
+                        width: 23%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789502025"] {
+                        top: calc(345px - 0px + 149px);
+                        left: calc(50% - 154.5px + 51px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789502025"] {
+                        top: calc(345px - 0px + 92px);
+                        left: calc(50% - 154.5px + 62px);
+                    }
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1702789512435"] {
+                    z-index: 5;
+                    top: calc(345px - 0px + 165px);
+                    left: calc(50% - 113px + 6px);
+                    width: 226px;
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1702789512435"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789512435"] {
+                        top: calc(345px - 0px + -200px);
+                        left: calc(50% - 113px + 240px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789512435"] {
+                        top: calc(345px - 0px + 48px);
+                        left: calc(50% - 113px + 42px);
+                        width: 22%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789512435"] {
+                        top: calc(345px - 0px + 23px);
+                        left: calc(50% - 113px + 29px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789512435"] {
+                        top: calc(345px - 0px + -17px);
+                        left: calc(50% - 113px + 11px);
+                    }
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1702789530501"] {
+                    z-index: 6;
+                    top: calc(345px - 0px + 169px);
+                    left: calc(50% - 182.5px + 361px);
+                    width: 365px;
+                }
+
+                #rec689070128 .tn-elem[data-elem-id="1702789530501"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789530501"] {
+                        top: calc(345px - 0px + -107px);
+                        left: calc(50% - 182.5px + 1px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789530501"] {
+                        top: calc(345px - 0px + -144px);
+                        left: calc(50% - 182.5px + 106px);
+                        width: 33%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789530501"] {
+                        top: calc(345px - 0px + -114px);
+                        left: calc(50% - 182.5px + 101px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689070128 .tn-elem[data-elem-id="1702789530501"] {
+                        top: calc(345px - 0px + -111px);
+                        left: calc(50% - 182.5px + 78px);
+                    }
+                }
+            </style>
+            <div class="t396">
+                <div class="t396__artboard" data-artboard-recid="689070128" data-artboard-screens="320,480,640,960,1200" data-artboard-height="690" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="330" data-artboard-height-res-480="420" data-artboard-height-res-640="520">
+                    <div class="t396__carrier" data-artboard-recid="689070128"></div>
+                    <div class="t396__filter" data-artboard-recid="689070128"></div>
+                    <div class="t396__elem tn-elem tn-elem__6890701281470210033144" data-elem-id="1470210033144" data-elem-type="image" data-field-top-value="-7" data-field-left-value="-316" data-field-width-value="310" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="908" data-field-fileheight-value="1652" data-field-top-res-320-value="15" data-field-left-res-320-value="-88" data-field-left-res-480-value="-130" data-field-top-res-640-value="-22" data-field-left-res-640-value="-159" data-field-width-res-640-value="33" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-2" data-field-left-res-960-value="-241" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./15.png" alt="" imgfield="tn_img_1470210033144"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6890701281702789486053" data-elem-id="1702789486053" data-elem-type="image" data-field-top-value="-140" data-field-left-value="386" data-field-width-value="307" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1079" data-field-fileheight-value="1029" data-field-top-res-320-value="-15" data-field-left-res-320-value="106" data-field-top-res-480-value="21" data-field-left-res-480-value="161" data-field-top-res-640-value="22" data-field-left-res-640-value="218" data-field-width-res-640-value="20" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="136" data-field-left-res-960-value="8" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./16.png" alt="" imgfield="tn_img_1702789486053"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6890701281702789502025" data-elem-id="1702789502025" data-elem-type="image" data-field-top-value="-145" data-field-left-value="46" data-field-width-value="309" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="541" data-field-fileheight-value="395" data-field-top-res-320-value="92" data-field-left-res-320-value="62" data-field-top-res-480-value="149" data-field-left-res-480-value="51" data-field-top-res-640-value="186" data-field-left-res-640-value="70" data-field-width-res-640-value="23" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="58" data-field-left-res-960-value="273" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./17.png" alt="" imgfield="tn_img_1702789502025"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6890701281702789512435" data-elem-id="1702789512435" data-elem-type="image" data-field-top-value="165" data-field-left-value="6" data-field-width-value="226" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="388" data-field-fileheight-value="317" data-field-top-res-320-value="-17" data-field-left-res-320-value="11" data-field-top-res-480-value="23" data-field-left-res-480-value="29" data-field-top-res-640-value="48" data-field-left-res-640-value="42" data-field-width-res-640-value="22" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-200" data-field-left-res-960-value="240" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./18.png" alt="" imgfield="tn_img_1702789512435"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6890701281702789530501" data-elem-id="1702789530501" data-elem-type="image" data-field-top-value="169" data-field-left-value="361" data-field-width-value="365" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="680" data-field-fileheight-value="453" data-field-top-res-320-value="-111" data-field-left-res-320-value="78" data-field-top-res-480-value="-114" data-field-left-res-480-value="101" data-field-top-res-640-value="-144" data-field-left-res-640-value="106" data-field-width-res-640-value="33" data-field-widthunits-res-640-value="%" data-field-top-res-960-value="-107" data-field-left-res-960-value="1" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original=".19.png" alt="" imgfield="tn_img_1702789530501"></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                t_onReady(function () {
+                    t_onFuncLoad('t396_init', function () {
+                        t396_init('689070128');
+                    });
+                });
+            </script><!-- /T396 -->
+        </div>
+        <div id="rec680535126" class="r t-rec" style=" " data-record-type="396">
+            <!-- T396 -->
+            <style>#rec680535126 .t396__artboard {
+                    height: 690px;
+                }
+
+                #rec680535126 .t396__filter {
+                    height: 690px;
+                }
+
+                #rec680535126 .t396__carrier {
+                    height: 690px;
+                    background-position: center center;
+                    background-attachment: scroll;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680535126 .t396__artboard {}
+
+                    #rec680535126 .t396__filter {}
+
+                    #rec680535126 .t396__carrier {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680535126 .t396__artboard {
+                        height: 520px;
+                    }
+
+                    #rec680535126 .t396__filter {
+                        height: 520px;
+                    }
+
+                    #rec680535126 .t396__carrier {
+                        height: 520px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680535126 .t396__artboard {
+                        height: 420px;
+                    }
+
+                    #rec680535126 .t396__filter {
+                        height: 420px;
+                    }
+
+                    #rec680535126 .t396__carrier {
+                        height: 420px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680535126 .t396__artboard {
+                        height: 330px;
+                    }
+
+                    #rec680535126 .t396__filter {
+                        height: 330px;
+                    }
+
+                    #rec680535126 .t396__carrier {
+                        height: 330px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                #rec680535126 .tn-elem[data-elem-id="1470210033144"] {
+                    z-index: 2;
+                    top: calc(345px - 0px + -89px);
+                    left: calc(50% - 125.5px + -448px);
+                    width: 251px;
+                }
+
+                #rec680535126 .tn-elem[data-elem-id="1470210033144"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680535126 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + 143px);
+                        left: calc(50% - 125.5px + -66px);
+                        width: 184px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680535126 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -114px);
+                        left: calc(50% - 125.5px + -56px);
+                        width: 6%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {}
+
+                @media screen and (max-width: 479px) {}
+
+                #rec680535126 .tn-elem[data-elem-id="1702441154995"] {
+                    z-index: 3;
+                    top: calc(345px - 0px + -4px);
+                    left: calc(50% - 125.5px + -55px);
+                    width: 251px;
+                }
+
+                #rec680535126 .tn-elem[data-elem-id="1702441154995"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + 184px);
+                        left: calc(50% - 125.5px + 194px);
+                        width: 124px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + -120px);
+                        left: calc(50% - 125.5px + 235px);
+                        width: 21%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + -97px);
+                        left: calc(50% - 125.5px + 145px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + -67px);
+                        left: calc(50% - 125.5px + 61px);
+                    }
+                }
+
+                #rec680535126 .tn-elem[data-elem-id="1702441324940"] {
+                    z-index: 4;
+                    top: calc(345px - 0px + -178px);
+                    left: calc(50% - 125.5px + 304px);
+                    width: 251px;
+                }
+
+                #rec680535126 .tn-elem[data-elem-id="1702441324940"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + -186px);
+                        left: calc(50% - 125.5px + -82px);
+                        width: 104px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + 162px);
+                        left: calc(50% - 125.5px + 214px);
+                        width: 20%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + 108px);
+                        left: calc(50% - 125.5px + 158px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + 54px);
+                        left: calc(50% - 125.5px + 101px);
+                    }
+                }
+
+                #rec680535126 .tn-elem[data-elem-id="1702441368517"] {
+                    z-index: 5;
+                    top: calc(345px - 0px + 147px);
+                    left: calc(50% - 125.5px + 425px);
+                    width: 251px;
+                }
+
+                #rec680535126 .tn-elem[data-elem-id="1702441368517"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441368517"] {
+                        top: calc(345px - 0px + -160px);
+                        left: calc(50% - 125.5px + 324px);
+                        width: 312px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441368517"] {
+                        top: calc(345px - 0px + 76px);
+                        left: calc(50% - 125.5px + 31px);
+                        width: 31%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441368517"] {
+                        top: calc(345px - 0px + 93px);
+                        left: calc(50% - 125.5px + 5px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {}
+
+                #rec680535126 .tn-elem[data-elem-id="1702441380548"] {
+                    z-index: 6;
+                    top: calc(345px - 0px + 186px);
+                    left: calc(50% - 54px + -294px);
+                    width: 108px;
+                }
+
+                #rec680535126 .tn-elem[data-elem-id="1702441380548"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -48px);
+                        left: calc(50% - 54px + -348px);
+                        width: 264px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -28px);
+                        left: calc(50% - 54px + -202px);
+                        width: 31%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -8px);
+                        left: calc(50% - 54px + -155px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680535126 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -4px);
+                        left: calc(50% - 54px + -104px);
+                    }
+                }
+            </style>
+          
+            <script>
+                t_onReady(function () {
+                    t_onFuncLoad('t396_init', function () {
+                        t396_init('680535126');
+                    });
+                });
+            </script><!-- /T396 -->
+        </div>
+        <div id="rec689071570" class="r t-rec" style=" " data-record-type="396">
+            <!-- T396 -->
+            <style>#rec689071570 .t396__artboard {
+                    height: 690px;
+                }
+
+                #rec689071570 .t396__filter {
+                    height: 690px;
+                }
+
+                #rec689071570 .t396__carrier {
+                    height: 690px;
+                    background-position: center center;
+                    background-attachment: scroll;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689071570 .t396__artboard {}
+
+                    #rec689071570 .t396__filter {}
+
+                    #rec689071570 .t396__carrier {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689071570 .t396__artboard {
+                        height: 520px;
+                    }
+
+                    #rec689071570 .t396__filter {
+                        height: 520px;
+                    }
+
+                    #rec689071570 .t396__carrier {
+                        height: 520px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689071570 .t396__artboard {
+                        height: 420px;
+                    }
+
+                    #rec689071570 .t396__filter {
+                        height: 420px;
+                    }
+
+                    #rec689071570 .t396__carrier {
+                        height: 420px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689071570 .t396__artboard {
+                        height: 330px;
+                    }
+
+                    #rec689071570 .t396__filter {
+                        height: 330px;
+                    }
+
+                    #rec689071570 .t396__carrier {
+                        height: 330px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                #rec689071570 .tn-elem[data-elem-id="1470210033144"] {
+                    z-index: 2;
+                    top: calc(345px - 0px + -89px);
+                    left: calc(50% - 125.5px + -448px);
+                    width: 251px;
+                }
+
+                #rec689071570 .tn-elem[data-elem-id="1470210033144"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689071570 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + 143px);
+                        left: calc(50% - 125.5px + -66px);
+                        width: 184px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689071570 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -115px);
+                        left: calc(50% - 125.5px + -3px);
+                        width: 14%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689071570 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + -94px);
+                        left: calc(50% - 125.5px + 17px);
+                        width: 22px;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689071570 .tn-elem[data-elem-id="1470210033144"] {
+                        top: calc(345px - 0px + 3px);
+                        left: calc(50% - 125.5px + -7px);
+                    }
+                }
+
+                #rec689071570 .tn-elem[data-elem-id="1702441154995"] {
+                    z-index: 3;
+                    top: calc(345px - 0px + -4px);
+                    left: calc(50% - 125.5px + -55px);
+                    width: 251px;
+                }
+
+                #rec689071570 .tn-elem[data-elem-id="1702441154995"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + 184px);
+                        left: calc(50% - 125.5px + 194px);
+                        width: 124px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + -120px);
+                        left: calc(50% - 125.5px + 235px);
+                        width: 21%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + -97px);
+                        left: calc(50% - 125.5px + 145px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441154995"] {
+                        top: calc(345px - 0px + -99px);
+                        left: calc(50% - 125.5px + 84px);
+                        width: 29px;
+                    }
+                }
+
+                #rec689071570 .tn-elem[data-elem-id="1702441324940"] {
+                    z-index: 4;
+                    top: calc(345px - 0px + -178px);
+                    left: calc(50% - 125.5px + 304px);
+                    width: 251px;
+                }
+
+                #rec689071570 .tn-elem[data-elem-id="1702441324940"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + -186px);
+                        left: calc(50% - 125.5px + -82px);
+                        width: 104px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + 162px);
+                        left: calc(50% - 125.5px + 214px);
+                        width: 20%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + 108px);
+                        left: calc(50% - 125.5px + 158px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441324940"] {
+                        top: calc(345px - 0px + 54px);
+                        left: calc(50% - 125.5px + 101px);
+                    }
+                }
+
+                #rec689071570 .tn-elem[data-elem-id="1702441368517"] {
+                    z-index: 5;
+                    top: calc(345px - 0px + 147px);
+                    left: calc(50% - 125.5px + 425px);
+                    width: 251px;
+                }
+
+                #rec689071570 .tn-elem[data-elem-id="1702441368517"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441368517"] {
+                        top: calc(345px - 0px + -160px);
+                        left: calc(50% - 125.5px + 324px);
+                        width: 312px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441368517"] {
+                        top: calc(345px - 0px + 76px);
+                        left: calc(50% - 125.5px + 31px);
+                        width: 31%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441368517"] {
+                        top: calc(345px - 0px + 93px);
+                        left: calc(50% - 125.5px + 5px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {}
+
+                #rec689071570 .tn-elem[data-elem-id="1702441380548"] {
+                    z-index: 6;
+                    top: calc(345px - 0px + 154px);
+                    left: calc(50% - 78.5px + -269px);
+                    width: 157px;
+                }
+
+                #rec689071570 .tn-elem[data-elem-id="1702441380548"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -36px);
+                        left: calc(50% - 78.5px + -316px);
+                        width: 264px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -28px);
+                        left: calc(50% - 78.5px + -202px);
+                        width: 31%;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -8px);
+                        left: calc(50% - 78.5px + -155px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec689071570 .tn-elem[data-elem-id="1702441380548"] {
+                        top: calc(345px - 0px + -4px);
+                        left: calc(50% - 78.5px + -104px);
+                    }
+                }
+            </style>
+    
+            <script>
+                t_onReady(function () {
+                    t_onFuncLoad('t396_init', function () {
+                        t396_init('689071570');
+                    });
+                });
+            </script><!-- /T396 -->
+        </div>
+        <div id="rec680006441" class="r t-rec" style=" " data-animationappear="off" data-record-type="396">
+            <!-- T396 -->
+            <style>#rec680006441 .t396__artboard {
+                    height: 300px;
+                }
+
+                #rec680006441 .t396__filter {
+                    height: 300px;
+                }
+
+                #rec680006441 .t396__carrier {
+                    height: 300px;
+                    background-position: center center;
+                    background-attachment: scroll;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680006441 .t396__artboard {
+                        height: 220px;
+                    }
+
+                    #rec680006441 .t396__filter {
+                        height: 220px;
+                    }
+
+                    #rec680006441 .t396__carrier {
+                        height: 220px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680006441 .t396__artboard {
+                        height: 220px;
+                    }
+
+                    #rec680006441 .t396__filter {
+                        height: 220px;
+                    }
+
+                    #rec680006441 .t396__carrier {
+                        height: 220px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680006441 .t396__artboard {
+                        height: 230px;
+                    }
+
+                    #rec680006441 .t396__filter {
+                        height: 230px;
+                    }
+
+                    #rec680006441 .t396__carrier {
+                        height: 230px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680006441 .t396__artboard {
+                        height: 150px;
+                    }
+
+                    #rec680006441 .t396__filter {
+                        height: 150px;
+                    }
+
+                    #rec680006441 .t396__carrier {
+                        height: 150px;
+                        background-attachment: scroll;
+                    }
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1470210033144"] {
+                    z-index: 2;
+                    top: 48px;
+                    left: calc(50% - 600px + -31px);
+                    width: 252px;
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1470210033144"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680006441 .tn-elem[data-elem-id="1470210033144"] {
+                        top: 25px;
+                        left: calc(50% - 480px + 195px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680006441 .tn-elem[data-elem-id="1470210033144"] {
+                        top: 30px;
+                        left: calc(50% - 320px + 108px);
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680006441 .tn-elem[data-elem-id="1470210033144"] {
+                        top: 144px;
+                        left: calc(50% - 240px + -331px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680006441 .tn-elem[data-elem-id="1470210033144"] {
+                        top: 21px;
+                        left: calc(50% - 160px + 105px);
+                        width: 129px;
+                    }
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1702347394352"] {
+                    z-index: 3;
+                    top: 48px;
+                    left: calc(50% - 600px + 221px);
+                    width: 252px;
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1702347394352"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347394352"] {
+                        top: 25px;
+                        left: calc(50% - 480px + 0px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347394352"] {
+                        top: 30px;
+                        left: calc(50% - 320px + -87px);
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347394352"] {
+                        top: 154px;
+                        left: calc(50% - 240px + -321px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347394352"] {
+                        top: 21px;
+                        left: calc(50% - 160px + 234px);
+                        width: 129px;
+                    }
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1702347399469"] {
+                    z-index: 4;
+                    top: 48px;
+                    left: calc(50% - 600px + 473px);
+                    width: 252px;
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1702347399469"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347399469"] {
+                        top: 25px;
+                        left: calc(50% - 480px + 390px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347399469"] {
+                        top: 30px;
+                        left: calc(50% - 320px + 303px);
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347399469"] {
+                        top: 35px;
+                        left: calc(50% - 240px + 324px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347399469"] {
+                        top: 389px;
+                        left: calc(50% - 160px + 327px);
+                        width: 129px;
+                    }
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1702347403570"] {
+                    z-index: 5;
+                    top: 48px;
+                    left: calc(50% - 600px + 725px);
+                    width: 252px;
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1702347403570"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347403570"] {
+                        top: 25px;
+                        left: calc(50% - 480px + 585px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347403570"] {
+                        top: 30px;
+                        left: calc(50% - 320px + 498px);
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347403570"] {
+                        top: 35px;
+                        left: calc(50% - 240px + 129px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347403570"] {
+                        top: 399px;
+                        left: calc(50% - 160px + 337px);
+                        width: 129px;
+                    }
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1702347405786"] {
+                    z-index: 6;
+                    top: 48px;
+                    left: calc(50% - 600px + 977px);
+                    width: 252px;
+                }
+
+                #rec680006441 .tn-elem[data-elem-id="1702347405786"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347405786"] {
+                        top: 25px;
+                        left: calc(50% - 480px + 780px);
+                        width: 195px;
+                    }
+                }
+
+                @media screen and (max-width: 959px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347405786"] {
+                        left: calc(50% - 320px + 693px);
+                    }
+                }
+
+                @media screen and (max-width: 639px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347405786"] {
+                        top: 35px;
+                        left: calc(50% - 240px + -66px);
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    #rec680006441 .tn-elem[data-elem-id="1702347405786"] {
+                        top: 21px;
+                        left: calc(50% - 160px + -24px);
+                        width: 129px;
+                    }
+                }
+            </style>
+            <div class="t396">
+                <div class="t396__artboard" data-artboard-recid="680006441" data-artboard-screens="320,480,640,960,1200" data-artboard-height="300" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="150" data-artboard-height-res-480="230" data-artboard-height-res-640="220" data-artboard-height-res-960="220">
+                    <div class="t396__carrier" data-artboard-recid="680006441"></div>
+                    <div class="t396__filter" data-artboard-recid="680006441"></div>
+                    <div class="t396__elem tn-elem tn-elem__6800064411470210033144" data-elem-id="1470210033144" data-elem-type="image" data-field-top-value="48" data-field-left-value="-31" data-field-width-value="252" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="278" data-field-fileheight-value="278" data-field-top-res-320-value="21" data-field-left-res-320-value="105" data-field-width-res-320-value="129" data-field-top-res-480-value="144" data-field-left-res-480-value="-331" data-field-top-res-640-value="30" data-field-left-res-640-value="108" data-field-top-res-960-value="25" data-field-left-res-960-value="195" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./roundzy.png" alt="" imgfield="tn_img_1470210033144"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6800064411702347394352" data-elem-id="1702347394352" data-elem-type="image" data-field-top-value="48" data-field-left-value="221" data-field-width-value="252" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="278" data-field-fileheight-value="278" data-field-top-res-320-value="21" data-field-left-res-320-value="234" data-field-width-res-320-value="129" data-field-top-res-480-value="154" data-field-left-res-480-value="-321" data-field-top-res-640-value="30" data-field-left-res-640-value="-87" data-field-top-res-960-value="25" data-field-left-res-960-value="0" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./roundzy.png" alt="" imgfield="tn_img_1702347394352"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6800064411702347399469" data-elem-id="1702347399469" data-elem-type="image" data-field-top-value="48" data-field-left-value="473" data-field-width-value="252" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="278" data-field-fileheight-value="278" data-field-top-res-320-value="389" data-field-left-res-320-value="327" data-field-width-res-320-value="129" data-field-top-res-480-value="35" data-field-left-res-480-value="324" data-field-top-res-640-value="30" data-field-left-res-640-value="303" data-field-top-res-960-value="25" data-field-left-res-960-value="390" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./roundzy.png" alt="" imgfield="tn_img_1702347399469"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6800064411702347403570" data-elem-id="1702347403570" data-elem-type="image" data-field-top-value="48" data-field-left-value="725" data-field-width-value="252" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="278" data-field-fileheight-value="278" data-field-top-res-320-value="399" data-field-left-res-320-value="337" data-field-width-res-320-value="129" data-field-top-res-480-value="35" data-field-left-res-480-value="129" data-field-top-res-640-value="30" data-field-left-res-640-value="498" data-field-top-res-960-value="25" data-field-left-res-960-value="585" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./roundzy.png" alt="" imgfield="tn_img_1702347403570"></div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6800064411702347405786" data-elem-id="1702347405786" data-elem-type="image" data-field-top-value="48" data-field-left-value="977" data-field-width-value="252" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="278" data-field-fileheight-value="278" data-field-top-res-320-value="21" data-field-left-res-320-value="-24" data-field-width-res-320-value="129" data-field-top-res-480-value="35" data-field-left-res-480-value="-66" data-field-left-res-640-value="693" data-field-top-res-960-value="25" data-field-left-res-960-value="780" data-field-width-res-960-value="195">
+                        <div class="tn-atom"><img class="tn-atom__img t-img" data-original="./roundzy.png" alt="" imgfield="tn_img_1702347405786"></div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                t_onReady(function () {
+                    t_onFuncLoad('t396_init', function () {
+                        t396_init('680006441');
+                    });
+                });
+            </script><!-- /T396 -->
+        </div>
+        <div id="rec680011393" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="131">
+            <!-- T123 -->
+            <div class="t123">
+                <div class="t-container_100 ">
+                    <div class="t-width t-width_100 ">
+
+
+
+
+                        <meta charset="UTF-8">
+                        <title>Continuous Dollar Rain</title>
+                        <style>.falling-dollar {
+                                position: fixed;
+                                top: -100px;
+                                opacity: 0.7;
+                                font-size: 20px;
+                        
+                                color: rgba(0, 128, 0, 0.852);
+                                user-select: none;
+                                z-index: 0;
+                                animation: fall linear;
+                            }
+
+                            @keyframes fall {
+                                to {
+                                    transform: translateY(110vh);
+                                    opacity: 0;
+                                }
+                            }
+                        </style>
+
+
+
+                        <script>
+                            // Function to generate a random number within a range
+                            function randomRange(min, max) {
+                                return Math.random() * (max - min) + min;
+                            }
+
+                            // Function to create a falling dollar and append it to the body
+                            function createFallingDollar() {
+                                var dollar = document.createElement('div');
+                                dollar.classList.add('falling-dollar');
+                                dollar.textContent = 'DID DEV SELL?!';
+                                dollar.style.left = randomRange(0, window.innerWidth - 20) +
+                                'px'; // Position the dollar randomly along the width of the screen
+                                dollar.style.animationDuration = randomRange(7, 13) +
+                                's'; // Randomize the time it takes to fall
+                                document.body.appendChild(dollar);
+
+                                // Remove the dollar from the DOM after it finishes falling
+                                dollar.addEventListener('animationend', function () {
+                                    dollar.parentNode.removeChild(dollar);
+                                });
+                            }
+
+                            // Start creating falling dollars at random intervals
+                            setInterval(createFallingDollar, randomRange(20,
+                            300)); // Adjust the range to control the frequency of new dollars appearing
+                        </script>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="rec680008668" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="674">
+            <!-- ardhinyuma -->
+            <div class="t674">
+                <div class="t674__cover t674__cover_fixed" id="recorddiv680008668" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <div class="t674__cover-carrier t-bgimg" data-original="./bg.gif" style="background-image:url(bg.gif)"></div>
+                    <meta itemprop="image" content="./bg.gif">
+                </div>
+                <style>body {
+                        background-color: #f1f1f1;
+                        position: relative;
+                        z-index: 0;
+                    }
+
+                    #allrecords {
+                        background-color: transparent !important;
+                    }
+
+                    #rec680008668 .t674__cover {
+                        display: block;
+                    }
+
+                    #rec680008668 .t674__cover-carrier {
+                        opacity: 0;
+                        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, transparent));
+                        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, transparent 100%);
+                        mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, transparent));
+                        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, transparent 100%);
+                    }
+
+                    #rec680008668 .t674__cover-carrier.loaded {
+                        opacity: 1;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+    <!--/allrecords-->
+    <!-- Stat -->
+    <script type="text/javascript">
+        if (!window.mainTracker) {
+            window.mainTracker = 'tilda';
+        }
+        window.tildastatcookie = 'no';
+        setTimeout(function () {
+            (function (d, w, k, o, g) {
+                var n = d.getElementsByTagName(o)[0],
+                    s = d.createElement(o),
+                    f = function () {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                s.type = "text/javascript";
+                s.async = true;
+                s.key = k;
+                s.id = "tildastatscript";
+                s.src = g;
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, 'fec3c9ab16a362a3d1e0a3604a73f672', 'script',
+                'https://static.tildacdn.com/js/tilda-stat-1.0.min.js');
+        }, 2000);
+    </script>
+
+    <div class="falling-dollar" style="left: 740.978px; animation-duration: 11.7192s;">$PTSD</div>
+    <div class="falling-dollar" style="left: 71.6169px; animation-duration: 9.24854s;">$PTSD</div>
+    <div class="falling-dollar" style="left: 148.988px; animation-duration: 8.27638s;">$PTSD</div>
+
+</body>
+
+</html>
